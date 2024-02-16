@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhardwaj Hotels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="index.html">Bhardwaj Hotels</a>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="open"></i>
+                    <i class="fas fa-times" id="close"></i>
+                </label>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+                    <li class="nav-item"><a href="spa.html" class="nav-link">SPA</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Know Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Here</a></li>
+                    <li class="nav-item"><a href="rooms.html" class="nav-link book-btn">Book Yours</a></li>
+                </ul>
+             </nav>
+        </div>
+        <div id="hero" class="hero">
+            <div class="container">
+                <div class="hero__text-box">
+                    <h1 class="hero__text">
+                        <span class="hero__text-top">Luxury</span>
+                        <span class="hero__text-bottom">Comfort</span>
+                    </h1>
+                    <button class="btn btn-green">Book Your Room</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- INFO SECTION -->
+        <section class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 padding-right">
+                        <p class="info-text text-green">
+                            Experience Luxury and Comfort Like Never Before at Bhardwaj Hotels. Your Perfect Getaway Awaits!
+                            Make your journey even more comfortable with our additional services.
+                        </p>
+                        <p class="info-text text-green">
+                            Bhardwaj Hotels is a sanctuary of sophistication and modern luxury. 
+                            Nestled in the heart of people, our hotel offers a seamless blend of comfort and elegance.
+                             With a team dedicated to exceeding your expectations, we strive to make every moment of your stay memorable.
+                        </p>
+                    </div>
+                    <div class="col-2 image-group">
+                        <img src="images/blog-list-img-1.jpg" alt="image">
+                        <img src="images/blog-list-img-2.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROOMS SECTION -->
+        <section class="rooms">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 padding-right">
+                        <img src="images/rooms.jpg" alt="image">
+                    </div>
+                    <div class="col-2">
+                        <div class="text-box">
+                            <h2 class="headline">Rooms</h2>
+                            <p>"Indulge in the opulence of our spacious rooms and suites. 
+                                Each room is tastefully designed, offering breathtaking views, plush furnishings, and state-of-the-art amenities.
+                                Whether you're here for business or leisure, our accommodations are tailored to meet your every need and want.<br>
+                                Room Categories:<br>
+
+                                 * Deluxe Rooms<br>
+                                 * Executive Suites<br>
+                                 *  Presidential Suite<br>
+                            </p>
+                            <!-- <a href="" class="btn btn-green">Explore Now</a> -->
+                            <button onclick="press1()" class="btn btn-green">Explore Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESTAURANT SECTION -->
+        <section class="restaurant">
+            <div class="container">
+                <div class="row column-reverse">
+                    <div class="col-2 padding-right">
+                        <div class="text-box">
+                            <h2>Restaurant</h2>
+                            <p>Gourmet Dining:
+                                " Our talented chefs prepare dishes using the finest ingredients, promising a gastronomic journey that delights the senses. 
+                                From international delicacies to local flavors, our diverse menu caters to every palate."
+                                
+                                Signature Restaurants:
+                                
+                                The Taste of India: Fine Dining Experience
+                                : Crafted Cocktails and Live Entertainment
+                                [Café Name]: Freshly Brewed Coffee and Pastries</p>
+                            <button onclick="press2()" class="btn btn-white">Dine With Us</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/restaurant.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPA SECTION -->
+        <section class="spa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 padding-right">
+                        <img src="images/spa.jpg" alt="image">
+                    </div>
+                    <div class="col-2">
+                        <div class="text-box">
+                            <h2>Spa &amp; Wellness</h2>
+                            <p>
+                                Welcome to Bhardwaj's Hotels Spa Sanctuary
+                                
+                                Indulge in a haven of relaxation and rejuvenation at our luxurious spa facility.
+                                 At Bhardwaj's Hotels, we believe in offering our guests an unparalleled wellness experience, 
+                                where tranquility meets exquisite pampering amidst a serene ambiance.</p>
+                            <button class="btn btn-green">Book Your SPA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL SECTION -->
+        <!-- <section class="testimonials">
+            <div class="container">
+                <h2 class="heading-text">Customers Reviews</h2>
+                <div class="slider">
+                    <div class="slider-box">
+                        <i class="fas fa-quote-left text-green"></i>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="images/user-1.jpg" alt="user">
+                        <h3>Chris Doe</h3>
+                    </div>
+                    <div class="slider-box">
+                        <i class="fas fa-quote-left text-green"></i>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="images/user-2.jpg" alt="user">
+                        <h3>John Doe</h3>
+                    </div>
+                    <div class="slider-box">
+                        <i class="fas fa-quote-left text-green"></i>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="images/user-3.jpg" alt="user">
+                        <h3>Jane Doe</h3>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer__content row">
+                <div class="col-3">
+                    <h4>About</h4>
+                    <p>Discover a world of unparalleled comfort and luxury at Bhardwaj's Hotels, 
+                        where our range of top-notch facilities is designed to 
+                        cater to your every need, ensuring a truly memorable stay.
+                        </p>
+                </div>
+                <div class="col-3">
+                    <h4>Payment Methods</h4>
+                    <p>Pay any way you choose, we support all payment options</p>
+                    <ul class="payment-methods">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-paypal"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-cc-visa"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-cc-mastercard"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-apple-pay"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4>Get Social</h4>
+                    <p>Follow us on social media and keep in touch with Bhardwaj Hotels.</p>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-tripadvisor"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
